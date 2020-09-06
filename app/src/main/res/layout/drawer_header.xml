@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/side_nav_bar"
+    android:focusable="true"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/default_margin"
+    android:paddingEnd="@dimen/default_margin"
+    android:paddingStart="@dimen/default_margin"
+    android:paddingTop="@dimen/default_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/app_name"
+        android:paddingTop="@dimen/padding_medium"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/drawer_header_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/imageView"
+        android:focusable="true"
+        android:nextFocusDown="@id/nav_home"
+        android:paddingEnd="@dimen/padding_medium"
+        android:paddingStart="@dimen/padding_medium"
+        android:text="@string/sign_in_msg"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/drawer_header_email_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/drawer_header_name_tv"
+        android:paddingEnd="@dimen/padding_medium"
+        android:paddingStart="@dimen/padding_medium"
+        android:text="@string/email"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>

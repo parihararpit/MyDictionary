@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/word_bookmark"
+        android:icon="@drawable/ic_bookmark_border_white_24dp"
+        app:showAsAction="always"
+        android:title="@string/save"/>
+    <item
+        android:id="@+id/word_copy"
+        android:icon="@drawable/ic_content_copy_white_24dp"
+        android:title="@string/copy"
+        android:orderInCategory="2"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/word_google"
+        android:icon="@drawable/google_icon_white"
+        android:title="@string/google"
+        android:orderInCategory="3"
+        app:showAsAction="never|withText" />
+    <item
+        android:id="@+id/word_translate"
+        android:icon="@drawable/ic_g_translate_white_24dp"
+        android:title="@string/translate"
+        android:orderInCategory="4"
+        app:showAsAction="always" />
+</menu>

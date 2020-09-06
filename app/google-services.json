@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "607068466524",
+    "firebase_url": "https://my-dictionary-20e6c.firebaseio.com",
+    "project_id": "my-dictionary-20e6c",
+    "storage_bucket": "my-dictionary-20e6c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607068466524:android:1d72aac9e8df617a7fa599",
+        "android_client_info": {
+          "package_name": "com.arpitsingh.mydictionary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607068466524-0gp4ittik765qvp777q4l6n968n0h6sq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvUnphQyqby7mxUOzfx4G3Kr6DluTy4kc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "607068466524-0gp4ittik765qvp777q4l6n968n0h6sq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

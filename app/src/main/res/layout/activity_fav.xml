@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.arpitsingh.mydictionary.activities.DrawerListener">
+
+    <LinearLayout
+        android:focusable="true"
+        android:id="@+id/history_empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:contentDescription="@string/search_something"
+            style="@style/EmptyStateImageView"
+            android:src="@drawable/search_something" />
+
+        <Button
+            android:focusable="true"
+            android:id="@+id/hitory_search_something"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/search_something" />
+    </LinearLayout>
+
+        <ListView
+            android:paddingStart="@dimen/default_padding"
+            android:paddingEnd="@dimen/default_padding"
+            android:focusable="true"
+            android:id="@+id/history_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="0dp"
+            android:drawSelectorOnTop="true"
+            />
+</RelativeLayout>

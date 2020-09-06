@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wod_widget_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_teal"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/widget_margin"
+    android:paddingStart="@dimen/widget_margin">
+
+    <TextView
+        android:id="@+id/widget_head_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="2dp"
+        android:focusable="true"
+        android:nextFocusForward="@id/widget_word_definition"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_medium"
+        android:textStyle="bold"
+        tools:text="abandon abandon this"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/widget_word_definition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/widget_head_word"
+        android:ellipsize="end"
+        android:focusable="true"
+        android:maxLines="2"
+        android:nextFocusUp="@id/widget_head_word"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_small"
+        android:textStyle="normal"
+        tools:text="some one leaved so despar"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>

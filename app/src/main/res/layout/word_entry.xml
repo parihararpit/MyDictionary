@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/darker_gray"
+    android:padding="@dimen/padding_medium">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="@dimen/card_cor_rad"
+        app:contentPadding="@dimen/padding_medium">
+
+        <LinearLayout
+            android:id="@+id/word_entry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/lex_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryText"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/text_avg"
+                android:textStyle="normal"
+                tools:text="cease to support or look after (someone); desert" />
+
+            <TextView
+                android:id="@+id/lex_definitions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:fontFamily="sans-serif-condensed"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_small"
+                android:textStyle="normal"
+                tools:text="abandon someone/something to" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:text="@string/examples"
+                android:textColor="@color/colorPrimaryText"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/text_avg"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/lex_examples"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_medium"
+                android:fontFamily="sans-serif-condensed"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="@dimen/text_small"
+                android:textStyle="normal"
+                tools:text="abandon someone/something to" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

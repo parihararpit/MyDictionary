@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="history_sort_by_label">
+        <item>@string/history_sort_search_value</item>
+        <item>@string/history_sort_word_value</item>
+    </string-array>
+    <string-array name="history_sort_by_value">
+        <item>@string/history_sort_search_value</item>
+        <item>@string/history_sort_word_value</item>
+    </string-array>
+    <string-array name="favourite_sort_by_value">
+        <item>@string/save</item>
+        <item>@string/history_sort_word_value</item>
+    </string-array>
+    <string-array name="pref_fav_sort_by_label">
+        <item>@string/setting_fav_sort_save_label</item>
+        <item>@string/setting_fav_sort_word_label</item>
+    </string-array>
+    <string-array name="pref_fav_sort_by_val">
+        <item>@string/setting_fav_sort_save_val</item>
+        <item>@string/setting_fav_sort_word_val</item>
+    </string-array>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.arpitsingh.mydictionary">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".DictionaryApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true">
+        <activity
+            android:name=".activities.HistoryActivity"
+            android:label="History"
+            android:parentActivityName=".activities.DrawerListener"
+            android:theme="@style/HitoryActionBar" />
+
+        <!-- smaller activites -->
+        <activity
+            android:name=".activities.WordActivity"
+            android:label="@string/word"
+            android:theme="@style/WordActionBar" />
+
+        <provider
+            android:name=".data.DictProvider"
+            android:authorities="com.example.amitnsky.dictionary"
+            android:exported="false" />
+
+        <activity
+            android:name=".activities.DrawerListener"
+            android:label="Dictionary"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".activities.SettingActivity"
+            android:label="@string/settings"
+            android:theme="@style/HitoryActionBar" />
+        <activity
+            android:name=".activities.SearchActivity"
+            android:label="Search"
+            android:parentActivityName=".activities.DrawerListener"
+            android:theme="@style/HitoryActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <activity
+            android:name=".activities.SignInActivity"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name=".networking.SyncService" />
+
+        <receiver android:name=".utilities.WodWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/wod_widget_info" />
+        </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.arpitsingh.mydictionary.activities.DrawerListener">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_small"
+        android:layout_marginRight="@dimen/margin_small"
+        android:layout_marginTop="@dimen/margin_small"
+        android:paddingEnd="@dimen/padding_small"
+        android:paddingStart="@dimen/padding_small"
+        app:cardCornerRadius="@dimen/card_cor_rad"
+        app:cardElevation="@dimen/card_elev">
+
+        <ListView
+            android:id="@+id/words_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider"
+            android:dividerHeight="@dimen/divider_height" />
+
+    </androidx.cardview.widget.CardView>
+
+    <include layout="@layout/loading_layout"/>
+
+</FrameLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.arpitsingh.mydictionary.activities.DrawerListener"
+    tools:showIn="@layout/drawer_activity_action_bar">
+    <!--for showing something in empty states-->
+    <!--before search starts-->
+    <LinearLayout
+        android:id="@+id/list_empty_view"
+        style="@style/EmptyLinearLayout">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:contentDescription="@string/search_something"
+                android:id="@+id/list_empty_image_view"
+                style="@style/EmptyStateImageView"
+                android:src="@drawable/search_something" />
+
+            <ProgressBar
+                android:id="@+id/list_empty_progress_view"
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:indeterminate="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/list_empty_text_view"
+            style="@style/EmptyStateTextView"
+            android:text="@string/search_something" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:paddingEnd="4dp"
+        android:paddingStart="4dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp">
+
+        <ListView
+            android:id="@+id/words_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider"
+            android:dividerHeight="1dp"/>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

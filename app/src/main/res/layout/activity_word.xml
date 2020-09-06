@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context="com.arpitsingh.mydictionary.activities.WordActivity">
+    <!--for showing something in empty states-->
+    <include layout="@layout/loading_layout" />
+
+    <!-- header view-->
+    <FrameLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/word_activity_header_rl"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/protector_gardient"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/default_padding"
+            android:paddingStart="@dimen/default_padding">
+
+            <LinearLayout
+                android:id="@+id/word_head_ll"
+                android:layout_alignParentStart="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:orientation="horizontal"
+                android:layout_alignParentLeft="true">
+
+                <TextView
+                    android:focusable="true"
+                    android:nextFocusForward="@id/speak_head_word_ib"
+                    android:nextFocusRight="@id/speak_head_word_ib"
+                    android:nextFocusDown="@id/word_pronunciation"
+                    android:id="@+id/head_word_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/text_large"
+                    android:textStyle="bold"
+                    tools:text="hi there" />
+
+                <ImageButton
+                    android:focusable="true"
+                    android:nextFocusLeft="@id/head_word_text_view"
+                    android:nextFocusForward="@id/word_pronunciation"
+                    android:contentDescription="@string/pronunciation"
+                    android:id="@+id/speak_head_word_ib"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/default_margin"
+                    android:layout_marginRight="@dimen/default_margin"
+                    android:background="@android:color/transparent"
+                    android:elevation="@dimen/card_elev"
+                    android:src="@drawable/baseline_volume_up_white_24" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/word_head_ll"
+                android:nextFocusForward="@id/word_one_definition"
+                android:nextFocusUp="@id/head_word_text_view"
+                android:id="@+id/word_pronunciation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:fontFamily="sans-serif"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_medium"
+                android:focusable="true"
+                android:textStyle="normal"
+                android:layout_alignParentLeft="true" />
+
+            <TextView
+                android:layout_below="@id/word_pronunciation"
+                android:layout_alignParentStart="true"
+                android:id="@+id/word_one_definition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_medium"
+                android:layout_marginTop="@dimen/default_margin"
+                android:focusable="true"
+                android:nextFocusForward="@id/word_list_view"
+                android:fontFamily="sans-serif"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_medium"
+                android:textStyle="italic"
+                android:layout_alignParentLeft="true" />
+
+        </RelativeLayout>
+
+
+        <ListView
+            android:id="@+id/word_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingTop="160dp"
+            android:paddingBottom="48dp"/>
+
+    </FrameLayout>
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#4CAF50</item>
+        <item name="colorPrimaryDark">#388E3C</item>
+        <item name="colorAccent">#1B5E20</item>
+    </style>
+
+    <style name="HitoryActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <item name="colorPrimary">#455A64</item>
+        <item name="colorPrimaryDark">#263238</item>
+        <item name="colorAccent">#1B5E20</item>
+    </style>
+
+    <style name="WordActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#0288D1</item>
+        <item name="colorPrimaryDark">#01579B</item>
+        <item name="colorAccent">#0091EA</item>
+    </style>
+
+    <style name="EmptyLinearLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginBottom">@dimen/default_padding</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="EmptyStateTextView">
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="EmptyStateImageView">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+    </style>
+</resources>

@@ -1,4 +1,4 @@
-#Project Description:
+# Project Description:
 
 Developed fully functional android application for watching details of words and performing search queries.
 
